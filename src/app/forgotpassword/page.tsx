@@ -2,7 +2,7 @@
 import axios from "axios";
 import toast from "react-hot-toast";
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 
 

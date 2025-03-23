@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { NextRequest, NextResponse } from "next/server";
+
 import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
-export default function profilePage(){
+export default function ProfilePage(){
 
 const router = useRouter();
 const [data,setData]= useState("nothing")

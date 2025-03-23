@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState,useEffect } from "react";
 import toast from "react-hot-toast";
 
-export default function resetPasswordPage(){
+export default function ResetPasswordPage(){
   const [token, setToken]=useState("")
   const[newpassword, setNewPassword] =useState("")
   const router = useRouter()

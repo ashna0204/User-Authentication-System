@@ -1,6 +1,5 @@
 "use client";
-import { NextRequest, NextResponse } from "next/server";
-import Router from "next/navigation";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -26,7 +25,7 @@ const verifyUserEmail = async () => {
 useEffect(()=>{
     const urlToken = window.location.search.split("=")[1]
     setToken(urlToken || "")
-})
+},[])
 
 useEffect(()=>{
     if(token.length > 0){
