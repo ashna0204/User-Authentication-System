@@ -13,7 +13,7 @@ export default function ResetPasswordPage(){
      e.preventDefault();
     try{
      
-      const res = await axios.post("api/users/resetpassword",{token,newpassword})
+      const res = await axios.post("/app/api/users/resetpassword",{token,newpassword})
       toast.success(res.data.message)
       router.push('/login')
 

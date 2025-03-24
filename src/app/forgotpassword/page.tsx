@@ -14,7 +14,7 @@ const[email,setEmail]=useState("")
 const onhandleSubmit = async(e:any)=>{
   e.preventDefault()
   try{
-    const res = await axios.post("/api/users/forgotpassword",{email})
+    const res = await axios.post("/app/api/users/forgotpassword",{email})
     toast.success(res.data.message)
 
   }
