@@ -19,7 +19,7 @@ export default function SignupPage() {
   const signUp = async () => {
     try {
       setLoading(true);
-      const response = await axios.post("/app/api/users/signup", user);
+      const response = await axios.post("/api/users/signup", user);
       console.log("successfully logged in", response.data);
       toast.success(response.data.message);
       setTimeout(() => {
