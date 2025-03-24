@@ -12,7 +12,7 @@ const [error,setError] = useState(false)
 
 const verifyUserEmail = useCallback(async () => {
   try {
-    await axios.post("/api/users/verifyemail", { token });
+    await axios.post("/app/api/users/verifyemail", { token });
     console.log("Received Token:", token);
     setVerified(true);
   } catch (error: any) {
